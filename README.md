@@ -48,5 +48,6 @@ Enter your choice:
 
 More information about using the library system is contained in LibrarySystem.pdf or in video.7z archive which contains a video guide through presentation.
 
+![image](https://github.com/Mild-Solvent/TheLibrarySystem/assets/115463208/af963d5d-16f0-4c2c-9dd7-284a854e9843)
 
 
