@@ -1,11 +1,15 @@
 # TheLibrarySystem
  Library system implemented in C++
+ 
 
 Is console base library system which allow users to modify library files Patrons.csv and library_books.csv
+
 
 **Patrons.csv** contains all the members of the library with their ID, names, borrowed books and dates when they borrowed them.
 
 **library_books.csv** contains all the books in library inventory with their ID,Book Name,Page Count,Author First Name,Author Last Name,Book Type
+
+
 
 
 ***__USAGE__***
@@ -38,6 +42,9 @@ Patron Dashboard
 4) Back
 Enter your choice:
 ```
+
+
+
 
 More information about using the library system is contained in LibrarySystem.pds or in video.7z archive which contains a video guide through presentation.
 
