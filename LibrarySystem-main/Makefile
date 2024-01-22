@@ -1,3 +1,8 @@
+#Makefile
+#Author: M00870488
+#Created: 1/7/2024
+#Updated: 22/1/2024
+
 # Directory of the current Makefile
 PROJECT_DIR = $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 
