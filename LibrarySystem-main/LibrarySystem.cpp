@@ -78,7 +78,7 @@ private:
     std::vector<Patron> patrons;
 
     // Strings holding paths to .csv files
-    std::string csvFilePath = "LibrarySystem-main/library_books.csv";  // Update with the actual path
+    std::string csvFilePath = "LibrarySystem-main/library_books.csv";
     std::string patronsFilePath = "Patrons.csv";
 
 public:
@@ -189,7 +189,6 @@ public:
                      " Author Last Name, Book Type\n";
 
         while (std::getline(file, line)) {
-            // Assuming the CSV format is: ID,Name,Page Count,Author First,Author Last,Type
             std::cout << line << std::endl;
         }
 
@@ -221,7 +220,7 @@ public:
     void searchPatrons() {
         std::string patronName;
         std::cout << "Enter Patron Name: ";
-        std::cin >> patronName; // Using cin for user input
+        std::cin >> patronName;
 
         std::ifstream file("Patrons.csv");
         std::string line;
@@ -378,7 +377,7 @@ public:
                           << ", Page Count: " << bookDetails[2] << ", Author First Name: " << bookDetails[3]
                           << ", Author Last Name: " << bookDetails[4] << ", Book Type: " << bookDetails[5] << std::endl;
                 found = true;
-                break; // Break the loop once the book is found
+                break;
             }
         }
 
