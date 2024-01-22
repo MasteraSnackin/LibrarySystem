@@ -7,7 +7,6 @@ Updated: 22/1/2024
 
 #include <iostream>
 #include <vector>
-#include <set>
 #include <fstream>
 #include <sstream>
 
@@ -171,6 +170,8 @@ public:
 
         // Add the patron to the in-memory list
         patrons.push_back(newPatron);
+
+        std::cout << "File updated successfully." << std::endl;
     }
 
     // Show all available books in library
@@ -250,11 +251,13 @@ public:
 
     // Handles borrowing books through Patrons.csv
     void borrowBook() {
-        std::string patronName, borrowedBook;
+        std::string patronName, borrowedBook, date;
         std::cout << "Enter Patron Name: ";
         std::cin >> patronName;
         std::cout << "Enter Borrowed Book: ";
         std::cin >> borrowedBook;
+        std::cout << "Enter Date (YYYY-MM-DD): ";
+        std::cin >> date;
 
         std::ifstream inputFile("Patrons.csv");
         std::vector<std::string> lines;
@@ -264,13 +267,14 @@ public:
         if (inputFile.is_open()) {
             while (std::getline(inputFile, line)) {
                 std::stringstream ss(line);
-                std::string id, name, book;
+                std::string id, name, book, existingDate;
                 std::getline(ss, id, ',');
                 std::getline(ss, name, ',');
                 std::getline(ss, book, ',');
+                std::getline(ss, existingDate, ',');
 
                 if (name == patronName) {
-                    modifiedLine = id + "," + name + "," + borrowedBook;
+                    modifiedLine = id + "," + name + "," + borrowedBook + "," + date;
                     lines.push_back(modifiedLine);
                     found = true;
                 } else {
