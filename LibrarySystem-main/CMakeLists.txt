@@ -5,7 +5,7 @@ project(LibrarySystem)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Include directories for your project header files
+# Include directories for project header files
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
 # Add the main application executable
