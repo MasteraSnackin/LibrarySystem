@@ -33,8 +33,8 @@ class Library {
 private:
     std::vector<Book> inventory;
     std::vector<Patron> patrons;
-    std::string csvFilePath;  // File path for library books
-    std::string patronsFilePath; // File path for patrons
+    std::string csvFilePath;
+    std::string patronsFilePath;
 
 public:
     Library();
